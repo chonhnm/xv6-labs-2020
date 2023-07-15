@@ -1,0 +1,6 @@
+usertrap
+7. represent syscall SYS_exec
+machine mode 
+lw	s2,0(zero) # 0 <_entry-0x80000000>. S2 
+address 0 is unmapped in the kernel address space.scause 0x000000000000000d represent Load page fault
+initcode pid=1

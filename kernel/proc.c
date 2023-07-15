@@ -310,6 +310,9 @@ fork(void)
 
   safestrcpy(np->name, p->name, sizeof(p->name));
 
+  // copy the trace mask from the parent to the child process.
+  np->trace = p->trace;
+
   pid = np->pid;
 
   release(&np->lock);
